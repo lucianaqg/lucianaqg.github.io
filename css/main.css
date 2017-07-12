@@ -446,6 +446,16 @@ h1.sale-info {
   footer div.row.second {
     padding: 45px 1%;
   }
+  .flyer {
+    background: url("../images/pattern-1.svg") repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    margin: 0 auto;
+ 
+}
+
 }
 @media screen and (max-width: 768px) {
   nav div.logo-nav {
@@ -528,6 +538,22 @@ h1.sale-info {
   footer div.row.second {
     padding: 30px 0;
   }
+
+img{
+    width: 75%;
+ 
+}
+
+}
+@media screen and (max-width: 520px) {
+#video {
+    padding: 50px; }
+
+h1.sale-info {
+  font-size: 19pt;
+  padding: 10px;
+
+}
 }
 @media screen and (max-width: 450px) {
   nav {
@@ -585,6 +611,14 @@ h1.sale-info {
   footer div.row.second {
     padding: 30px 0;
   }
+#video {
+    padding: 50px; }
+
+h1.sale-info {
+  font-size: 19pt;
+  padding: 10px;
+
+}
 }
 @media screen and (max-width: 375px) {
   nav {
