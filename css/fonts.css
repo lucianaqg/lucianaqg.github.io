@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'gotham-book';
+  src: url('../fonts/gotham-book.eot');
+  src: url('../fonts/gotham-book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gotham-book.woff') format('woff'),
+       url('../fonts/gotham-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../fonts/gotham-bold.eot');
+  src: url('../fonts/gotham-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gotham-bold.woff') format('woff'),
+       url('../fonts/gotham-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'agencyfb-bold';
+  src: url('../fonts/agencyfb-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'governor';
+  src: url('../fonts/governor.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,657 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*
+* GENERAL STYLES
+*/
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hidden {
+  display: none;
+}
+h1 {
+  font-size: 50pt;
+  line-height: 50pt;
+  letter-spacing: 3px;
+  font-family: "AgencyFB-Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-family: 'Governor', sans-serif;
+  font-size: 21pt;
+  line-height: 21pt;
+  letter-spacing: 3px;
+}
+h3 {
+  font-size: 16pt;
+  line-height: 16pt;
+  letter-spacing: 1.8px;
+  font-family: "AgencyFB-Bold", sans-serif;
+}
+.blue {
+  color: #448aeb;
+}
+.pink {
+  color: #ff50a2;
+}
+.orange {
+  color: #ff5200;
+}
+.brown {
+  color: #360000;
+}
+a {
+  text-decoration: none;
+}
+
+/*Parallelogram Titles*/
+
+div.container-parallelogram {
+  text-align: center;
+  padding: 3em 0 1.8em 0;
+}
+a.parallelogram { 
+  transform: skewX(-17deg); 
+}
+a.parallelogram p { 
+  transform: skewX(17deg);
+  left: 0;
+  padding: 0; 
+}
+a.parallelogram {
+  display: inline-block;
+  margin: .5em;
+  padding: 17px 2%;
+  background: #1B0A09;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "AgencyFB-Bold", sans-serif;
+  font-size: 18pt;
+  letter-spacing: 1px;
+}
+
+/*
+* HEADER
+*/
+
+header.header-intro {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4.5em;
+}
+header.header-intro h1,
+h2,
+h3 {
+  display: inline-block;
+}
+header.header-intro h2 {
+  margin: 12px 0;
+  border-top: 2px solid #448aeb;
+  border-bottom: 2px solid #448aeb;
+  padding: 16px 0;
+}
+header.hero {
+  background: transparent url("../images/hero.png") center top no-repeat;
+  background-size: cover;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  display: block;
+  width: 82%;
+  background-color: #fff;
+  padding: 20px 9%;
+  z-index: 50;
+  top: 0;
+}
+nav h1 {
+  display: inline-block;
+  font-size: 22pt;
+  line-height: 22pt;
+  text-align: left;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+nav div.logo-nav {
+  float: left;
+}
+nav div.nav-right {
+  float: right;
+}
+nav a {
+  font-size: 18pt;
+  line-height: 18pt;
+  text-transform: uppercase;
+  font-family: "AgencyFB-Bold", sans-serif;
+  letter-spacing: 2px;
+}
+/*
+* Section LineUp
+*/
+
+section.line-up {
+  background: transparent url("../images/background-pattern.svg") center top no-repeat;
+  background-size: cover;
+  padding: 0 10%;
+  overflow: auto;
+}
+section.line-up div.column {
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+}
+section.line-up div.column.last {
+  margin-right: 0;
+}
+section.line-up div.column article {
+  margin-bottom: 1.5em;
+}
+section.line-up div.column article img {
+  box-shadow: 0px 9px 15px -4px #222; 
+  -webkit-box-shadow: 0px 9px 15px -4px #222;
+  -mos-osx-box-shadow: 0px 9px 15px -4px #222;
+}
+
+/*hover effect*/
+
+section.line-up .band {
+  height: 200px;
+  cursor: pointer;
+}
+section.line-up .band:hover .overlay {
+  opacity: 0.8;
+}
+section.line-up .band .overlay {
+  opacity: 0;
+  background-color: #FA5626;
+  width: 265px;
+  height: 200px;
+  position: relative;
+  bottom: 203px;
+}
+div.overlay h1 {
+  font-family: "Gotham Bold", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20pt;
+  line-height: 20pt;
+  position: relative;
+  top: 80px;
+  letter-spacing: 0;
+}
+/*end hover effect*/
+
+/* modal */
+
+.band .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.7);
+}
+
+.band .modal .content {
+  position: relative;
+  z-index: 100;
+  margin: 6em auto;
+  display: block;
+  height: auto;
+  width: 44%;
+  background-color: #fff;
+  position: relative;
+  padding: 15px 3%;
+  font-family: 'Gotham Book', sans-serif;
+  color: #444;
+  font-size: 12pt;
+  line-height: 16pt;
+}
+.band .modal .content img.close-modal {
+  float: right;
+  box-shadow: none;
+  margin: 0.5em 0 0 0;
+}
+.band .modal .content h1 {
+  color: #F15F35;
+  text-align: left;
+  font-size: 30pt;
+  line-height: 30pt;
+  margin: 1.5em 0 0.5em 0;
+  position: relative;
+  left: 33px;
+}
+.band .modal .content p {
+  text-align: left;
+  position: relative;
+  left: 33px;
+  line-height: 18pt;
+  padding: 0 10% 0 0;
+}
+.band .modal .content p strong {
+  font-weight: bold;
+}
+.band .modal .content ul {
+  margin: 2em 0;
+}
+.band .modal .content ul li {
+  display: inline-block;
+  position: relative;
+  left: 27px;
+  margin: 0 0.5em;
+}
+.band .modal .content ul li a {
+  font-size: 14pt;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+  color: #444;
+}
+.band .modal .content ul li.border {
+  border-left: 1px solid #DBDCE2;
+  border-right: 1px solid #DBDCE2;
+  padding: 0 2%;
+}
+.band .modal .content ul li a.facebook-link {
+  color: #3B5998;
+}
+.band .modal .content ul li a.twitter-link {
+  color: #65BBF2;
+}
+.band .modal .content ul li a.site-link {
+  color: #565656;
+}
+/* end modal */
+
+section.line-up div.two-columns {
+  padding: 0 25%;
+}
+section.line-up div.two-columns div.column {
+  width: 49%;
+}
+
+/*
+* Section Event
+*/
+
+section#event h1 {
+  text-align: left;
+  font-size: 23pt;
+  line-height: 23pt;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 0.2em 0 1em 0;
+}
+section#event p {
+  font-family: 'Gotham Book', sans-serif;
+  color: #444;
+  font-size: 14pt;
+  line-height: 26pt;
+}
+section.container.even.cards {
+  padding: 110px 11% 50px;
+}
+section.container {
+  overflow: auto;
+}
+section.container div.column {
+  float: left;
+  width: 44%;
+  margin-right: 6%;
+}
+section#event article.card {
+  margin: 2em 0;
+}
+section#event article.card img {
+  position: absolute;
+}
+section#event article.card h1,
+p {
+  position: relative;
+  left: 138px;
+  padding: 0 17% 0 0
+}
+section.programing img {
+  margin: 0 auto;
+  display: block;
+  width: 75%;
+}
+
+/*
+* Footer
+*/
+footer {
+  background: url("../images/pattern-1.svg") repeat;
+  padding: 0 10% 0 7.5%;
+  overflow: auto;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 1em;
+} 
+footer div.row {
+  background-color: #fff;
+  margin: 60px 0;
+  padding: 57px 54px;
+}
+footer div.row h2 {
+  font-family: "AgencyFB-Bold", sans-serif;
+  font-size: 20pt;
+  line-height: 20pt;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+footer div.row img.resize {
+  width: 60px;
+}
+footer div.row img.resize-agadu {
+  width: 130px;
+}
+footer div.row li.border-left {
+  border-left: 2px solid #340604;
+  padding: 0 0 0 3%;
+}
+footer span {
+  display: none;
+}
+footer div.row.first {
+  padding: 53px 2%;
+  margin: 68px 0;
+}
+footer div.row.second {
+  padding: 45px 2%;
+}
+footer div.row.last {
+  padding: 40px 17%;
+  margin: 30px 0 60px 0;
+}
+footer li a.icon-email img {
+  margin-bottom: 0.3em;
+}
+
+/*
+* Media Queries
+*/
+
+/*--------------FLYER---------*/
+
+
+.flyer {
+    background: url("../images/pattern-1.svg") repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    margin: 0 auto;
+ 
+}
+
+/*------------------------------------------------------------------
+	+ Video
+-------------------------------------------------------------------*/
+
+#video {
+    padding: 100px;
+    position: relative;
+    background-size: cover;
+    background-color: #e45f96;
+    text-align: center; }
+    #video a {
+        display: inline-block;
+        color: #fff; }
+    #video h4 {
+        margin-bottom: 20px; }
+
+h1.sale-info {
+  color: #fff;
+  background-color: #e45f96;
+  font-size: 24pt;
+  line-height: 24pt;
+  padding: 50px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+  section.line-up {
+    padding: 0 0 0 1%;
+  }
+  section.container.even.cards {
+    padding: 110px 7% 50px;
+  }
+  section.container div.column {
+    width: 42%;
+    margin-right: 7%;
+  }
+  section.container.even.cards {
+    padding: 110px 5% 50px;
+  }
+  footer {
+    padding: 0 3% 0 0.5%;
+  }
+  footer div.row.second {
+    padding: 45px 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav div.logo-nav {
+    float: none;
+    text-align: center;
+  }
+  nav {
+    width: 73%;
+    padding: 20px 17%;
+  }
+  nav div.nav-right {
+    margin: 0.5em 0 0 0;
+    float: none;
+    text-align: center;
+  }
+  section.line-up {
+    padding: 0 12%;
+  }
+  section.line-up div.column {
+    width: 44.5%;
+    margin-right: 5.5%;
+  }
+  section.line-up div.two-columns div.column {
+    width: 44.5%;
+  }
+  section.line-up div.column article img {
+    width: 100%;
+  }
+  section.line-up .band .overlay {
+    opacity: 0;
+    background-color: #FA5626;
+    width: 100%;
+    height: 203px;
+    position: relative;
+    bottom: 206px;
+  }
+  section.line-up div.two-columns {
+    padding: 0 0;
+  }
+  .band .modal {
+    overflow: scroll;
+  }
+  .band .modal .content {
+    width: 94%;
+    top: 0;
+    margin: 6em auto;
+  }
+  .band .modal .content img.close-modal {
+    width: auto;
+  }
+  section.container.even.cards {
+    padding: 110px 11% 50px;
+  }
+  section.container div.column {
+    float: none;
+    width: 63%;
+    margin-right: 6%;
+  }
+  footer {
+    padding: 5px 18%;
+  }
+  footer div.row h2 {
+    text-align: center;
+    display: block;
+  }
+  footer ul li {
+    display: block;
+    margin: 1em 0;
+  }
+  footer img {
+    margin: 0 auto;
+    display: block;
+  }
+  footer div.row.first {
+    padding: 30px 0;
+  }
+  footer div.row.second {
+    padding: 30px 0;
+  }
+  footer div.row.second {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  nav {
+    width: 80%;
+  }
+  nav div.logo-nav {
+    float: left;
+  }
+  nav div.nav-right {
+    float: right;
+    position: relative;
+    right: 37px;
+  }
+  nav a {
+    font-size: 11pt;
+    line-height: 11pt;
+  }
+  section.line-up {
+    padding: 0 20%;
+  }
+  section.line-up div.column {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+  }
+  section.line-up div.two-columns {
+    padding: 0;
+  }
+  section.line-up div.two-columns div.column {
+    width: 100%;
+  }
+  section.container.even.cards {
+    padding: 15px 6% 50px;
+  }
+  section.container div.column {
+    margin-right: 0;
+    width: 70%;
+  }
+  section.programing img {
+    width: 100%;
+  }
+  footer {
+    padding: 5px 16%;
+  }
+  footer img {
+    margin: 0 auto;
+    display: block;
+  }
+  footer div.row.first {
+    padding: 30px 0;
+  }
+  footer div.row.second {
+    padding: 30px 0;
+  }
+  footer div.row.second {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav {
+    width: 83%;
+    padding: 20px 9%;
+  }
+  nav div.logo-nav {
+    float: none;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav h1 {
+    font-size: 18pt;
+  }
+  nav div.nav-right {
+    right: 19px;
+  }
+  section.line-up {
+    padding: 0 15%;
+  }
+  .band .modal .content {
+    width: 86%;
+    padding: 15px 7%;
+    top: 0;
+  }
+  .band .modal .content h1 {
+    left: 0;
+  }
+  .band .modal .content p {
+    font-size: 10pt;
+    line-height: 12pt;
+    padding: 0;
+    left: 0;
+  }
+  .band .modal .content ul li {
+    left: 0;
+  }
+  section.container.even.cards {
+    padding: 15px 3% 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav {
+    width: 92%;
+    padding: 20px 9%;
+  }
+  nav div.logo-nav {
+    float: left;
+  }
+  section.line-up {
+    padding: 0 8%;
+  }
+  section.container.even.cards {
+    padding: 15px 15% 50px;
+  }
+  section#event article.card img {
+    display: block;
+    margin: 0 auto;
+    position: initial;
+  }
+  section#event article.card h1, p {
+    left: 0;
+    padding: 0;
+  }
+  section.container div.column {
+    width: 100%;
+  }
+}
+
