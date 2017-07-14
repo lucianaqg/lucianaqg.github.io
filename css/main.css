@@ -1,5 +1,4 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 /*
@@ -401,17 +400,37 @@ img{
  
 }
 
+
 /*------------------------------------------------------------------
 	+ Video
 -------------------------------------------------------------------*/
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(227, 105, 159, 0.9);
+    }
+    
+.videomus{
+     background-color: rgba(227, 105, 159, 0.8);
+}
 #video {
     padding: 100px;
     position: relative;
     background-size: cover;
-    background-color: #e45f96;
+     background-image: url("../images/video_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+   
     text-align: center; }
     #video a {
+        z-index: 1000;
+        position: relative;
         display: inline-block;
         color: #fff; }
     #video h4 {
@@ -419,7 +438,7 @@ img{
 
 h1.sale-info {
   color: #fff;
-  background-color: #e45f96;
+
   font-size: 24pt;
   line-height: 24pt;
   padding: 50px;
@@ -446,6 +465,16 @@ h1.sale-info {
   footer div.row.second {
     padding: 45px 1%;
   }
+  .flyer {
+    background: url("../images/pattern-1.svg") repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    margin: 0 auto;
+ 
+}
+
 }
 @media screen and (max-width: 768px) {
   nav div.logo-nav {
@@ -528,6 +557,22 @@ h1.sale-info {
   footer div.row.second {
     padding: 30px 0;
   }
+
+.flyer img{
+    width: 75%;
+ 
+}
+
+}
+@media screen and (max-width: 520px) {
+#video {
+    padding: 50px; }
+
+h1.sale-info {
+  font-size: 19pt;
+  padding: 10px;
+
+}
 }
 @media screen and (max-width: 450px) {
   nav {
@@ -585,6 +630,14 @@ h1.sale-info {
   footer div.row.second {
     padding: 30px 0;
   }
+#video {
+    padding: 50px; }
+
+h1.sale-info {
+  font-size: 19pt;
+  padding: 10px;
+
+}
 }
 @media screen and (max-width: 375px) {
   nav {
@@ -654,4 +707,3 @@ h1.sale-info {
     width: 100%;
   }
 }
-
